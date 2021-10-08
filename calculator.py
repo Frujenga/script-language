@@ -1,3 +1,6 @@
+import secret_logic
+
+
 def ask():
     print("Calculator application. Please give me the")
     print("1.operand (integer)")
@@ -23,20 +26,7 @@ def ask():
     return operator, operand1, operand2
 
 
-def calculate(operator, operand1, operand2):
-    result = 0
-    if operator == '+':
-        result = operand1 + operand2
-    elif operator == '-':
-        result = operand1 - operand2
-    elif operator == '*':
-        result = operand1 * operand2
-    elif operator == '/':
-        result = operand1 / operand2
-    return result
-
-
 opr, op1, op2 = ask()
-rst = calculate(opr, op1, op2)
+rst = secret_logic.calculate(opr, op1, op2)
 print(f"Result {rst}")
 exit(0)
