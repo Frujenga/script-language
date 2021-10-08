@@ -15,6 +15,7 @@ def ask():
     operator = text
 
     print("2.operand (integer)")
+    text = input()
     while not text.isnumeric():
         print("Bad input, again")
         text = input()
@@ -22,8 +23,8 @@ def ask():
     return operator, operand1, operand2
 
 
-
 def calculate(operator, operand1, operand2):
+    result = 0
     if operator == '+':
         result = operand1 + operand2
     elif operator == '-':
@@ -32,9 +33,10 @@ def calculate(operator, operand1, operand2):
         result = operand1 * operand2
     elif operator == '/':
         result = operand1 / operand2
+    return result
 
-        print(f'result: {result}')
 
-
-print(calculate(ask()))
+opr, op1, op2 = ask()
+rst = calculate(opr, op1, op2)
+print(f"Result {rst}")
 exit(0)
