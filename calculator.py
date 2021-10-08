@@ -5,14 +5,14 @@ def ask():
     print("Calculator application. Please give me the")
     print("1.operand (integer)")
     text = input()
-    while not text.isnumeric():
+    while not secret_logic.is_numeric(text):
         print("Bad input, again")
         text = input()
     operand1 = int(text)
 
     print("operator (+ | - | * | /)")
     text = input()
-    while text not in ['+', '-', '*', '/']:
+    while secret_logic.is_supported_operator(text):
         print("Bad input, again")
         text = input()
     operator = text
