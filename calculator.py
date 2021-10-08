@@ -12,6 +12,7 @@ while text not in ['+', '-', '*', '/']:
     print("Bad input, again")
     text = input()
 operator = text
+
 print("2.operand (integer)")
 while not text.isnumeric():
     print("Bad input, again")
