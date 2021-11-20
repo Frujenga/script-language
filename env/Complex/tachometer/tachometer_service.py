@@ -7,6 +7,7 @@ from report_generator_service import REPORT_GENERATION_QUEUE
 DATA_DIR = os.path.join(os.getcwd(), 'data')
 
 
+
 def get_save_directory(driver: str, vehicle: str) -> str:
     if not os.path.exists(DATA_DIR):
         LOG.info(f'Create Directory {DATA_DIR}')
