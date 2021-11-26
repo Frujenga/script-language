@@ -1,2 +1,0 @@
-#My own python app for the final exam
-This is a program what my friends, and I can use for planning a video game's character. In this version we can add, update or delete a character and also we can see all the character in the database.
